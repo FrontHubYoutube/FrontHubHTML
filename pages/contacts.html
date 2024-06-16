@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <header>
+        <a href="../index.html">
+        <img width="140" src="../assets/logo.png" alt="logo">
+        </a>
+        <nav>
+            <a href="../index.html">Главная</a> |
+            <a href="about.html">О канале</a> |
+            <a href="articles.html">Статьи</a> |
+            <a href="contacts.html">Связь со мной</a>
+        </nav>
+    </header>
+    <h1>Хотите связаться со мной?</h1>
+    <form action="#">
+        <fieldset>
+            <legend>Связь со мной</legend><br>
+            <label for="name">Как зовут?*</label><br>
+            <input 
+            required 
+            pattern="[А-Яа-яA-Za-z]{1,15}" 
+            title="Введите свое имя"
+            type="text" id="name"> <br><br>
+            <fieldset>
+                <legend>Как с тобой связаться?</legend>
+                <input type="checkbox"  id="check1" value="email" checked >
+                <label for="check1"> Написать на почту?*</label><br>
+                <input type="checkbox"  id="check2" value="tg">
+                <label for="check2">Написать в телегу?</label><br>
+                <label for="email">Напиши свою почту</label><br>
+                <input required type="email" id="email"><br>
+                <label for="email">Напиши свой ник</label><br>
+                <input type="text"><br>
+
+            </fieldset><br>
+            
+            <fieldset>
+                <legend>Насколько интересно смотреть?</legend>
+                <input type="radio" name="interes" value="Заебись" id="radio1" checked>
+                <label for="radio1">Заебись</label><br>
+                <input type="radio" name="interes" value="Супер гуд" id="radio2">
+                <label for="radio2">Супер гуд</label><br>
+                <input type="radio" name="interes" value="Сомнительно... Но окэй" id="radio3">
+                <label for="radio1">Сомнительно... Но окэй</label><br>
+                <input type="radio" name="interes" value="Ну как такое может быть в 21 веке?!" id="radio4">
+                <label for="radio1">Ну как такое может быть в 21 веке?!</label><br><br>
+    
+            </fieldset><br>
+       
+            <label for="comment">Комментарий:</label><br>
+            <textarea id="comment" cols="100" rows="10"></textarea><br>
+            <p>* - поля, обязательные для заполнения</p>
+            <button>
+                Отправить
+            </button>
+        </fieldset>
+        <br>
+    </form>
+    <footer><center>© FrontHub 2024</center></footer>
+
+</body>
+</html>
